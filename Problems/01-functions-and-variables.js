@@ -26,12 +26,13 @@
 // write a function "hello" that always returns the string "Hello!"
 
 function hello () {
-  return `Hello!`; // should return "Hello!"
+  return `Hello!`;
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
 }
 
+hello();
 
 // Problem 2
 // Improve your initial function by accepting a parameter
