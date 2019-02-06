@@ -39,12 +39,15 @@ hello();
 // "name" and returning a string "Hello, [insert name]!"
 
 function greeting(name) {
+  var greeting = "Hello, " + name + ".";
+  return greeting;
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
   // var parting = "Goodbye, " + name + ".";
   // (but of course, I actually want to say hello.)
 }
+greeting(`Ms. Atwood`);
 
 // Problem 3
 // write a function that takes three parameters and returns an array
