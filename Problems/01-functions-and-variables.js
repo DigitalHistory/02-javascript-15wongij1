@@ -70,31 +70,45 @@ returnArray();
 // "Italo Calvino was a novelist."
 
 function splitArray (thisArray) {
+ let newArray = [`Tim`, `Horton`, `Donut`];
+ var thisArray = newArray.split;
+ var splitArray = newArray[0] + " " + newArray[1] + " was a " + newArray[2] + ".";
+ return splitArray;
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
   // etc.
-
 }
+
+splitArray();
 
 // Problem 5
 // A. Write a simple function that takes two arguments.  Subtact the second number from the first.
 // Return the result
 function subtract(number1, number2) {
+  var subtract = number1 - number2;
+  return subtract;
   // subtract number2 from number1, and return the result.
 }
 
+subtract();
 
 //B. Write a slightly more complex number that only performs the subtraction after testing to be
 // sure that both parameters are numbers. If so, return the result. If not, return the string
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
+  var first = (8+2);
+  var second = (2+3);
+  var carefulSubtract = `I can only subtract numbers.`;
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
+  return carefulSubtract;
   return first - second;
 }
+
+carefulSubtract(10, 5);
 
 
 
