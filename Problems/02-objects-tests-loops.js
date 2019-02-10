@@ -82,12 +82,23 @@ objectToSentence();
 // "Frida Kahlo was not a writer."
 
 function wasWriter (obj) {
+var writer = {firstName: `Margaret`, lastName: `Atwood`, profession: `novelist`};
+var nonWriter = {firstName: `Anne`, lastName: `Carson`, profession: `poet`};
+  var wasWriter = true;
+  if (obj === true) {
+    var wasWriter = obj + ` was a writer.`;
+  } else {
+    var wasWriter = obj + ` was not a writer.`;
+  }
+return wasWriter;
   // in an if/else statement
   // it is acceptable to put the
   // "return" statement inside the conditional braces
   // so you can, e.g.,
   // if (...) {return A} else {return B}
 }
+
+wasWriter();
 
 
 // Problem 4
@@ -99,9 +110,16 @@ function wasWriter (obj) {
 // "Oh Canada!Oh Canada!Oh Canada!Oh Canada!Oh Canada!"
 
 function stringIterator (aString, aNumber) {
+  for (var i = 0; i<4; i++) {
+    var s = `My eyes hurt!`;
+    s.repeat = 4;
+  }
+return stringIterator;
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
+
+stringIterator();
 
 
 // Problem 5
