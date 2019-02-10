@@ -100,6 +100,8 @@ subtract();
 function carefulSubtract (first, second) {
   var carefulSubtract = true;
   var NaN =  false;
+  isNaN(first);
+  isNaN(second);
   if (carefulSubtract === true) {
     var carefulSubtract = first - second;
   } else {

@@ -13,6 +13,11 @@
 //   profession: 'novelist' }
 
 function returnObject (first, last, prof) {
+  var o = {};
+    o.firstName = `Elijah`;
+    o.lastName = `Harper`;
+    o.profession = `Canadian politician`;
+  return o; // returning object
   // it might be easiest here to declare a variable
   // var o = {};
   // and then add properties to it one by one
@@ -21,6 +26,7 @@ function returnObject (first, last, prof) {
   // don't forget to return the object
 }
 
+returnObject(`Elijah`, `Harper`, `Canadian politician`);
 
 
 // Problem 2
@@ -41,6 +47,12 @@ function returnObject (first, last, prof) {
 
 
 function objectToSentence (obj) {
+  var obj = {};
+   obj.firstName = `John`;
+   obj.lastName = `Hewitt`;
+   obj.profession = `cooper`;
+  var objectToSentence = obj.firstName + " " + obj.lastName + " was a " + obj.profession + ".";
+  return objectToSentence;
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
@@ -48,6 +60,8 @@ function objectToSentence (obj) {
   // note the quotes in the first version
   return "RETURNVALUE";
 }
+
+objectToSentence();
 
 
 // Problem 3
