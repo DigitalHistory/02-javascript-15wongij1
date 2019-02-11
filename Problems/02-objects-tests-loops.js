@@ -83,7 +83,7 @@ objectToSentence();
 
 function wasWriter (obj) {
   if (obj.profession = `novelist`) {
-    return "object.firstName object.lastName was a writer." // this person is a writer
+    return `object.firstName object.lastName was a writer.` // this person is a writer
   } else {
     return "object.firstName object.lastName was not a writer." // this person is NOT a writer
   // in an if/else statement

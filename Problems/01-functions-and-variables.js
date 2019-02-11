@@ -116,18 +116,20 @@ carefulSubtract();
 // if the parameter is null, return the string "sorry, I can't do anything with a null value."
 // for any other type, return "I don't know how to use that kind of variable."
 function typeTester (unknown) {
-  if (String(unknown)) {
-    return unknown + ` yay!`;
-  } else if (Number.isInteger(unknown)) { // number is actually an integer
-    return unknown * unknown; // square of number
-  } else if (unknown === null) { // null is true
+  if (unknown = String) {
+    return String + ` yay!`;
+  } else if (unknown = Number.isInteger) {
+    return number * number;
+  } else if (unknown = null) {
     return `sorry, I can't do anything with a null value.`;
-  } else { // everything else
-    return `I don't know how to use that kind of variable.`;
+  } else {
+    return `I don't know how to use that kind of variable.`
   }
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
+
+typeTester();
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 // MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK
