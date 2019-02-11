@@ -82,16 +82,17 @@ objectToSentence();
 // "Frida Kahlo was not a writer."
 
 function wasWriter (obj) {
-  obj = wasWriter
   if (obj.profession = `novelist`) {
-    console.log(obj.firstname + ` ` + obj.lastname + ` was a writer.`);
+    return "object.firstName object.lastName was a writer." // this person is a writer
   } else {
-    console.log(obj.firstName + ` ` + obj.lastName + ` was not a writer.`);
+    return "object.firstName object.lastName was not a writer." // this person is NOT a writer
+  // in an if/else statement
+  // it is acceptable to put the
+  // "return" statement inside the conditional braces
+  // so you can, e.g.,
+  // if (...) {return A} else {return B}
  }
 }
-
-wasWriter();
-
 
 // Problem 4
 // Write a function that, when passed a string and an integer as parameters,
