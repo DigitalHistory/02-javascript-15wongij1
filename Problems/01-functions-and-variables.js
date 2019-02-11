@@ -98,21 +98,15 @@ subtract();
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
-  var carefulSubtract = true;
-  var NaN =  false;
-  isNaN(first);
-  isNaN(second);
-  if (carefulSubtract === true) {
-    var carefulSubtract = first - second;
+  if (Number.isInteger(first-second)) {
+    return first-second;
   } else {
-    var NaN = `I can only subtract numbers.`;
+   return `I can only subtract numbers.`;
   }
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
-  return first - second;
 }
-
 carefulSubtract();
 
 // Problem 6
@@ -122,11 +116,19 @@ carefulSubtract();
 // if the parameter is null, return the string "sorry, I can't do anything with a null value."
 // for any other type, return "I don't know how to use that kind of variable."
 function typeTester (unknown) {
+  if (String(unknown)) {
+    return unknown + ` yay!`;
+  } else if (Number.isInteger(unknown)) { // number is actually an integer
+    return unknown * unknown; // square of number
+  } else if (unknown === null) { // null is true
+    return `sorry, I can't do anything with a null value.`;
+  } else { // everything else
+    return `I don't know how to use that kind of variable.`;
+  }
+  }
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
-
-
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 // MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK
