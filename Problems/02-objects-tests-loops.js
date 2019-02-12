@@ -182,7 +182,17 @@ prettyIterator(`Study harder!`);
 // }
 // computeReign (willy);
 
+var louis = {
+  fullName: `Louis Riel`,
+  party: `Métis National Committee`,
+  from: `1869`,
+  to: `1870`
+}
+
 function computeReign (pm) {
+  var result = ``;
+  result = louis.fullName + `'s reign was ` + (louis.to - louis.from) + ` years long.`;
+return result;
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
   // and construct the desired sentence using the appropriate
@@ -231,7 +241,36 @@ function computeReign (pm) {
 //   William Lyon Mackenzie King's reign was 5 years long.
 //
 
+let ministers = [ {
+  fullName: `Wilfred Laurier`,
+  party: `Liberal`,
+  from: `1896`,
+  to: `1911`
+}, {
+  fullName: `Robert L. Borden`,
+  party: `Conservative/Unionist`,
+  from: `1911`,
+  to: `1920`
+}, {
+  fullName: `Arthur Meighen`,
+  party: `Conservative`,
+  from: `1920`,
+  to: `1921`
+}, {
+  fullName: `William Lyon Mackenzie King`,
+  party: `Liberal`,
+  from: `1921`,
+  to: `1926`
+}];
+
+sentences (ministers);
+
 function sentences(list) {
+  let result = ``;
+  for (m of ministers) {
+   result = (m.fullName + `'s reign was ` + (m.to-m.from) + ` years long.` + `\n`);
+  }
+  return result;
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access

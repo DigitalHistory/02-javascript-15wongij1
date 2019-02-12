@@ -116,9 +116,8 @@ carefulSubtract();
 // if the parameter is null, return the string "sorry, I can't do anything with a null value."
 // for any other type, return "I don't know how to use that kind of variable."
 
-var string = `This test passes --`;
-var number = 99;
-var undefined = undefined;
+let string = `This test passes --`
+let number = 99;
 
 function typeTester(unknown) {
   var result = ``;
@@ -136,8 +135,6 @@ function typeTester(unknown) {
   // return a value. 
 }
 typeTester();
-
-console.log(typeTester(number))
 
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
