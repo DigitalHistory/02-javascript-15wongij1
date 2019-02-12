@@ -116,26 +116,25 @@ carefulSubtract();
 // if the parameter is null, return the string "sorry, I can't do anything with a null value."
 // for any other type, return "I don't know how to use that kind of variable."
 
-let string = `This test passes --`
-let number = 99;
-
 function typeTester(unknown) {
   var result = ``;
-  if (string) {
-    result = string + ` yay!`;
-  } else if (number) {
-    result = number * number;
-  } else if (undefined) {
+  if (typeof unknown == String) {
+    result = unknown + ` yay!`;
+  } else if (typeof unknown == Number) {
+    result = unknown * unknown;
+  } else if (typeof unknown == Object) {
     result = `sorry, I can't do anything with a null value.`;
   } else {
     result = `I don't know how to use that kind of variable.`;
   }
   return result;
-  // use an if/else construction, a switch/case , or any other branching logic. Remember to
+    // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
 typeTester();
 
+console.log(typeTester());
+console.log(typeTester(99));
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 // MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK

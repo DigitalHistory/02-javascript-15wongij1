@@ -107,6 +107,8 @@ function wasWriter(obj) {
 }
 
 
+
+
 // Problem 4
 // Write a function that, when passed a string and an integer as parameters,
 // will repeat the string "integer" times
@@ -192,7 +194,7 @@ var louis = {
 function computeReign (pm) {
   var result = ``;
   result = louis.fullName + `'s reign was ` + (louis.to - louis.from) + ` years long.`;
-return result;
+  return result;
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
   // and construct the desired sentence using the appropriate
@@ -268,8 +270,9 @@ sentences (ministers);
 function sentences(list) {
   let result = ``;
   for (m of ministers) {
-   result = (m.fullName + `'s reign was ` + (m.to-m.from) + ` years long.` + `\n`);
+   result = (m.fullName + `'s reign was ` + (parseInt(m.to)-parseInt(m.from)) + ` years long.` + `\n`);
   }
+  console.log(m);
   return result;
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
@@ -284,7 +287,6 @@ if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
 else {
   var exports = window.skeleton = {};
 }
-
 
 exports.returnObject = returnObject;
 exports.objectToSentence = objectToSentence;
