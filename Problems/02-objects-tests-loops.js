@@ -63,7 +63,6 @@ function objectToSentence (obj) {
 
 objectToSentence();
 
-
 // Problem 3
 // Write a function that takes an object as a parameter. If the object
 // has a property "profession" with the value "novelist"
@@ -81,18 +80,32 @@ objectToSentence();
 // it will return
 // "Frida Kahlo was not a writer."
 
-function wasWriter (obj) {
-  if (obj.profession = `novelist`) {
-    return `object.firstName object.lastName was a writer.` // this person is a writer
-  } else {
-    return "object.firstName object.lastName was not a writer." // this person is NOT a writer
-  // in an if/else statement
-  // it is acceptable to put the
-  // "return" statement inside the conditional braces
-  // so you can, e.g.,
-  // if (...) {return A} else {return B}
- }
+var writer = {
+  firstName:`Margaret`,
+  lastName: `Atwood`,
+  profession: `novelist`
+};
+
+var nonWriter = {
+  firstName:`Anne`,
+  lastName: `Carson`,
+  profession: `poet`
+};
+
+function wasWriter(obj) {
+  var result = ``;
+  var myProfession = `profession`;
+  var myNovelist = `novelist`;
+  
+  if(obj.hasOwnProperty(myProfession) && (obj.profession == myNovelist)) {
+    result = obj.firstName + ` ` + obj.lastName + ` was a writer.`;
+  }
+  else {
+    result = obj.firstName + ` ` + obj.lastName + ` was not a writer.`;
+  }
+  return result;
 }
+
 
 // Problem 4
 // Write a function that, when passed a string and an integer as parameters,
@@ -103,16 +116,17 @@ function wasWriter (obj) {
 // "Oh Canada!Oh Canada!Oh Canada!Oh Canada!Oh Canada!"
 
 function stringIterator (aString, aNumber) {
-
-  var aString = `My eyes hurt!`;
-  var aNumber = 4;
-return stringIterator;
+ var result=``;
+for (var i=0; i < 4; i++) {
+  result = result + aString;
+  console.log(`My eyes hurt!`);
+}
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
+return result;
 }
 
-stringIterator();
-
+stringIterator(`My eyes hurt!`, 4);
 
 // Problem 5
 // Improve upon the above function by adding the iteration number in
@@ -128,9 +142,16 @@ stringIterator();
 // Reconciliation before Celebration(150)
 
 function prettyIterator (aString, aNumber) {
+  var result=``;
+for (var i=0; i<3; i++) {
+  result = result + aString + `(` + (i + 1) + `)` + `\n`;
+  console.log(`Study harder!`);
+}
+return result;
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
 
+prettyIterator(`Study harder!`);
 
 
 // Problem 6
