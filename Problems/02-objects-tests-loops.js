@@ -45,12 +45,13 @@ returnObject(`Elijah`, `Harper`, `Canadian politician`);
 // objectToSentence(returnObject("Italo", "Calvino", "novelist""))
 // (hold that thought for later!)
 
+var person = {
+  firstName: `John`,
+  lastName: `Hewitt`,
+  profession: `cooper`
+}
 
 function objectToSentence (obj) {
-  var obj = {};
-   obj.firstName = `John`;
-   obj.lastName = `Hewitt`;
-   obj.profession = `cooper`;
   var objectToSentence = obj.firstName + " " + obj.lastName + " was a " + obj.profession + ".";
   return objectToSentence;
   // remember you can refer to object properties using either of 2 methods
@@ -58,10 +59,9 @@ function objectToSentence (obj) {
   // or
   // obj.propertyname
   // note the quotes in the first version
-  return "RETURNVALUE";
 }
 
-objectToSentence();
+objectToSentence(person);
 
 // Problem 3
 // Write a function that takes an object as a parameter. If the object
