@@ -70,7 +70,7 @@ returnArray(`Tim`, `Horton`, `Donuts`);
 // "Italo Calvino was a novelist."
 
 function splitArray (thisArray) {
- let newArray = [`Tim`, `Horton`, `Donut`];
+ let newArray = thisArray;
  var thisArray = newArray.split;
  var splitArray = newArray[0] + " " + newArray[1] + " was a " + newArray[2] + ".";
  return splitArray;
@@ -80,7 +80,7 @@ function splitArray (thisArray) {
   // etc.
 }
 
-splitArray();
+splitArray(`Tim`,`Horton`,`Donut`);
 
 // Problem 5
 // A. Write a simple function that takes two arguments.  Subtact the second number from the first.
