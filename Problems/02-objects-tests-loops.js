@@ -270,7 +270,7 @@ sentences (ministers);
 function sentences(list) {
   let result = ``;
   for (m of ministers) {
-   result = (m.fullName + `'s reign was ` + (parseInt(m.to)-parseInt(m.from)) + ` years long.` + `\n`);
+   result = result + (m.fullName + `'s reign was ` + (parseInt(m.to)-parseInt(m.from)) + ` years long.` + `\n`);
   }
   console.log(m);
   return result;

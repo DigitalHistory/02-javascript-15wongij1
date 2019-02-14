@@ -98,7 +98,7 @@ subtract();
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
-  if (Number.isInteger(first-second)) {
+  if (Number.isInteger(first,second)) {
     return first-second;
   } else {
    return `I can only subtract numbers.`;
@@ -118,12 +118,12 @@ carefulSubtract();
 
 function typeTester(unknown) {
   var result = ``;
-  if (typeof unknown == String) {
+  if (typeof (unknown) == `string`) {
     result = unknown + ` yay!`;
-  } else if (typeof unknown == Number) {
+  } else if (typeof unknown == `number`) {
     result = unknown * unknown;
-  } else if (typeof unknown == Object) {
-    result = `sorry, I can't do anything with a null value.`;
+  } else if (typeof unknown == `undefined`) {
+    result = `Sorry, I can't do anything with an undefined value.`;
   } else {
     result = `I don't know how to use that kind of variable.`;
   }
@@ -131,10 +131,16 @@ function typeTester(unknown) {
     // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
-typeTester();
+typeTester(`This test passes --`);
+typeTester(99);
+typeTester(undefined);
+typeTester(null);
 
-console.log(typeTester());
-console.log(typeTester(99));
+console.log(typeTester(`This test passes --`));
+console.log(typeTester(36));
+console.log(typeTester(`hello` + 99));
+console.log(typeTester(undefined));
+console.log(typeTester(null));
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 // MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK
