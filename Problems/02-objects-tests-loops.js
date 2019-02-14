@@ -145,7 +145,7 @@ stringIterator(`My eyes hurt!`, 4);
 
 function prettyIterator (aString, aNumber) {
   var result=``;
-for (var i=0; i<3; i++) {
+for (var i=0; i< aNumber; i++) {
   result = result + aString + `(` + (i + 1) + `)` + `\n`;
   console.log(`Study harder!`);
 }
@@ -153,7 +153,7 @@ return result;
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
 
-prettyIterator(`Study harder!`);
+prettyIterator(`Study harder!`, 3);
 
 
 // Problem 6
