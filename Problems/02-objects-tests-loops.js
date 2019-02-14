@@ -14,9 +14,9 @@
 
 function returnObject (first, last, prof) {
   var o = {};
-    o.firstName = `Elijah`;
-    o.lastName = `Harper`;
-    o.profession = `Canadian politician`;
+    o.firstName = first;
+    o.lastName = last;
+    o.profession = prof;
   return o; // returning object
   // it might be easiest here to declare a variable
   // var o = {};

@@ -80,7 +80,7 @@ function splitArray (thisArray) {
   // etc.
 }
 
-splitArray(`Tim`,`Horton`,`Donut`);
+splitArray(`Tim`,`Horton`,);
 
 // Problem 5
 // A. Write a simple function that takes two arguments.  Subtact the second number from the first.
