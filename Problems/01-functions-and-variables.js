@@ -98,7 +98,7 @@ subtract();
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
-  if (Number.isInteger(first,second)) {
+  if (Number.isFinite(first-second)) {
     return first-second;
   } else {
    return `I can only subtract numbers.`;
