@@ -119,7 +119,7 @@ function wasWriter(obj) {
 
 function stringIterator (aString, aNumber) {
  var result=``;
-for (var i=0; i < 4; i++) {
+for (var i=0; i < aNumber; i++) {
   result = result + aString;
   console.log(`My eyes hurt!`);
 }
