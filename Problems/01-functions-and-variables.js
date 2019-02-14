@@ -54,13 +54,13 @@ greeting(`Ms. Atwood`);
 // consisting of the three parameters together
 
 function returnArray (first, second, third) {
-  let newArray = [`Tim`, `Horton`, `Donuts`];
+  let newArray = [first, second, third];
   return newArray;
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 }
-
-returnArray();
+   
+returnArray(`Tim`, `Horton`, `Donuts`);
 
 // Problem 4
 // write a function that, when passed a single argument (an array of 3 or more elements)
