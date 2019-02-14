@@ -193,7 +193,7 @@ var louis = {
 
 function computeReign (pm) {
   var result = ``;
-  result = louis.fullName + `'s reign was ` + (louis.to - louis.from) + ` years long.`;
+  result = pm.fullName + `'s reign was ` + (pm.to - pm.from) + ` years long.`;
   return result;
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
@@ -203,7 +203,7 @@ function computeReign (pm) {
   // finally, makre sure you return the sentence as the value of the function
 }
 
-
+computeReign(louis);
 
 // Problem 7
 // Write a function that takes as a parameter an ARRAY OF OBJECTS
